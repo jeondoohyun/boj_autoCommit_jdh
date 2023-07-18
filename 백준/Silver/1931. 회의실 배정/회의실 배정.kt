@@ -16,6 +16,7 @@ fun main(args: Array<String>) {
         list_timeOfUse.add(TimeOfUse(inputTime[0].toInt(), inputTime[1].toInt()))
     }
 
+    // 그리디정렬 적용
     // 시작시간은 끝나는시간과 같거나 작다. 끝나는시간을 오름차순으로 정렬하면 첫번째 회의실 이용시간은 최소인 요소를 배치 할수 있다.
     // 끝나는 시간을 기준으로 오름차순으로 정렬후 끝나는시간이 같으면 시작시간을 오름차순으로 정렬한다.
     var list__ = list_timeOfUse.sortedWith(Comparator { o1, o2 ->
