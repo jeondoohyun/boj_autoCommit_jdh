@@ -24,6 +24,7 @@ fun main(args: Array<String>) {
     bw.close()
 }
 
+// 이진탐색 로직
 fun bSearch(target: Int, arr: List<Int>): String {
     var low = 0
     var high = arr.lastIndex
