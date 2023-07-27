@@ -10,7 +10,7 @@ fun main(args: Array<String>) {
 
     var n = br.readLine().toInt()
 
-    var array = IntArray(n+2) // 각 요소들은 0으로 초기화됨
+    var array = IntArray(n+10) // 각 요소들은 0으로 초기화됨
     array[1] = 1
 
     for (i in 2 .. n) {
