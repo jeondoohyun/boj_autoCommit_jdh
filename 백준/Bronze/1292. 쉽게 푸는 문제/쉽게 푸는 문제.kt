@@ -15,7 +15,7 @@ fun main(args: Array<String>) {
 
         var bounds = br.readLine().split(" ").map { it.toInt() }
 
-        for (i in 1 .. 1000) {
+        for (i in 1 .. 100) {
             for (j in 1 .. i) {
                 arr_int.add(i)
             }
