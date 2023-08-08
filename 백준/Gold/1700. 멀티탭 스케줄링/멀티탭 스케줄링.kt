@@ -32,7 +32,7 @@ fun main(args: Array<String>) {
                     for (del in 0 until products.size) {
                         if (multitab[del] && del !in reuse_arr) { multitab[del] = false;break }
                     }
-                } else { // 현재 멀티탭에 꽂혀있는 기기 모두 나중에 재사용 된다. 제일 나중에 사용되는 기기를 빼준다. 123122 이여서 마지막 2를 빼주던 123221 여서 1을 빼주던 뽑는 횟수는 똑같다
+                } else { // 현재 멀티탭에 꽂혀있는 기기 모두 나중에 재사용 된다. 제일 나중에 사용되는 기기를 빼준다.
                     multitab[reuse_arr.last()] = false
                 }
                 multitab[products[i]] = true
