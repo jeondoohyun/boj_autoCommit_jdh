@@ -25,7 +25,7 @@ fun main(args: Array<String>) {
                 var result = sum - 아홉난쟁이[i] - 아홉난쟁이[j]  // 왜 IndexOutOfBound가 뜨지
                 if (result == 100) {
                     아홉난쟁이.removeAt(i)   // 요소를 빼버려서 리스트 인덱스가 짧아졌는데 for문 계속 돌리면 indexOutOfBound
-                    아홉난쟁이.removeAt(j-1) // 위에서 i index를 빼버렸기 때문에 한칸이 짧아져서 j-1을 해줘야 j위치의 요소값을 뺄수 있다
+                    아홉난쟁이.removeAt(j-1) // 
                     아홉난쟁이.sort()
                     flag = true
                     break
