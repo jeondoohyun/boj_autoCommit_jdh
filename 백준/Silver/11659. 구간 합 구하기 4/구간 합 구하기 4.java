@@ -30,10 +30,10 @@ class Main {
             StringBuffer sb = new StringBuffer();
             while (cnt < M) {
                 String[] s1 = br.readLine().split(" ");
-                int i = Integer.parseInt(s1[0]);
-                int j = Integer.parseInt(s1[1]);
-                if (i == 1) sb.append( addNum[j - 1] + "\n");
-                else sb.append((addNum[j - 1] - addNum[i - 2])+"\n");
+                int i = Integer.parseInt(s1[0]) - 1;    // 인덱스는 0부터 시작하므로 인덱스에 맞추기 위해 -1
+                int j = Integer.parseInt(s1[1]) - 1;
+                if (i == 0) sb.append( addNum[j] + "\n");
+                else sb.append((addNum[j] - addNum[i - 1])+"\n");
                 cnt++;
             }
 
