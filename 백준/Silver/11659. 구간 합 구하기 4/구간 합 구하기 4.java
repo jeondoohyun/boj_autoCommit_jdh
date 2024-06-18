@@ -1,5 +1,4 @@
 
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
@@ -19,7 +18,7 @@ class Main {
             int M = Integer.parseInt(s[1]);
 
             String[] numbers = br.readLine().split(" ");
-            int[] addNum = new int[N+1];
+            int[] addNum = new int[N];
 
             for (int i=0 ; i<N ; i++) {
                 if (i==0) addNum[0] = Integer.parseInt(numbers[0]);
